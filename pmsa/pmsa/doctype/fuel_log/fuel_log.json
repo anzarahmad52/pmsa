@@ -1,0 +1,42 @@
+{
+    "doctype": "DocType",
+    "name": "Fuel Log",
+    "module": "PMSA",
+    "fields": [
+        {
+            "fieldname": "vehicle",
+            "fieldtype": "Link",
+            "label": "Vehicle",
+            "options": "Patrol Vehicle",
+            "reqd": 1
+        },
+        {
+            "fieldname": "fuel_date",
+            "fieldtype": "Date",
+            "label": "Fuel Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "amount",
+            "fieldtype": "Float",
+            "label": "Amount of Fuel (Liters)",
+            "reqd": 1
+        },
+        {
+            "fieldname": "cost",
+            "fieldtype": "Currency",
+            "label": "Cost"
+        },
+        {
+            "fieldname": "odometer_reading",
+            "fieldtype": "Int",
+            "label": "Odometer Reading",
+            "reqd": 1
+        },
+        {
+            "fieldname": "fuel_station",
+            "fieldtype": "Data",
+            "label": "Fuel Station"
+        }
+    ]
+}

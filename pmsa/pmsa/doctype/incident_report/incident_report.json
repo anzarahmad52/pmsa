@@ -1,0 +1,26 @@
+{
+    "doctype": "DocType",
+    "name": "Incident Report",
+    "module": "PMSA",
+    "fields": [
+        {
+            "fieldname": "incident_time",
+            "fieldtype": "Time",
+            "label": "Incident Time",
+            "reqd": 1
+        },
+        {
+            "fieldname": "description",
+            "fieldtype": "Text",
+            "label": "Description",
+            "reqd": 1
+        },
+        {
+            "fieldname": "severity",
+            "fieldtype": "Select",
+            "label": "Severity",
+            "options": "\nLow\nMedium\nHigh",
+            "reqd": 1
+        }
+    ]
+}

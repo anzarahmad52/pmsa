@@ -1,0 +1,42 @@
+{
+    "doctype": "DocType",
+    "name": "Vehicle Maintenance",
+    "module": "PMSA",
+    "fields": [
+        {
+            "fieldname": "vehicle",
+            "fieldtype": "Link",
+            "label": "Vehicle",
+            "options": "Patrol Vehicle",
+            "reqd": 1
+        },
+        {
+            "fieldname": "maintenance_date",
+            "fieldtype": "Date",
+            "label": "Maintenance Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "maintenance_type",
+            "fieldtype": "Select",
+            "label": "Maintenance Type",
+            "options": "\nOil Change\nTire Rotation\nBrake Inspection\nOther",
+            "reqd": 1
+        },
+        {
+            "fieldname": "cost",
+            "fieldtype": "Currency",
+            "label": "Cost"
+        },
+        {
+            "fieldname": "service_provider",
+            "fieldtype": "Data",
+            "label": "Service Provider"
+        },
+        {
+            "fieldname": "next_maintenance_due",
+            "fieldtype": "Date",
+            "label": "Next Maintenance Due"
+        }
+    ]
+}

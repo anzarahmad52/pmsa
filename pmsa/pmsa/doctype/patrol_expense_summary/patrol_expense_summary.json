@@ -1,0 +1,32 @@
+{
+    "doctype": "DocType",
+    "name": "Patrol Expense Summary",
+    "module": "PMSA",
+    "fields": [
+        {
+            "fieldname": "patrol_record",
+            "fieldtype": "Link",
+            "label": "Patrol Record",
+            "options": "Patrol Record",
+            "reqd": 1
+        },
+        {
+            "fieldname": "total_expense",
+            "fieldtype": "Currency",
+            "label": "Total Expense",
+            "reqd": 1
+        },
+        {
+            "fieldname": "breakdown",
+            "fieldtype": "Table",
+            "label": "Expense Breakdown",
+            "options": "Expense Entry"
+        },
+        {
+            "fieldname": "approved_by",
+            "fieldtype": "Link",
+            "label": "Approved By",
+            "options": "User"
+        }
+    ]
+}

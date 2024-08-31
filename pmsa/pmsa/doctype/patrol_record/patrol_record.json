@@ -1,0 +1,33 @@
+{
+    "doctype": "DocType",
+    "name": "Patrol Record",
+    "module": "PMSA",
+    "fields": [
+        {
+            "fieldname": "patrol_date",
+            "fieldtype": "Date",
+            "label": "Patrol Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "team",
+            "fieldtype": "Link",
+            "label": "Patrol Team",
+            "options": "Patrol Team",
+            "reqd": 1
+        },
+        {
+            "fieldname": "route",
+            "fieldtype": "Link",
+            "label": "Patrol Route",
+            "options": "Patrol Route",
+            "reqd": 1
+        },
+        {
+            "fieldname": "incident_report",
+            "fieldtype": "Table",
+            "label": "Incident Report",
+            "options": "Incident Report"
+        }
+    ]
+}

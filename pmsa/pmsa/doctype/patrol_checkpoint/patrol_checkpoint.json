@@ -1,0 +1,31 @@
+{
+    "doctype": "DocType",
+    "name": "Patrol Checkpoint",
+    "module": "PMSA",
+    "fields": [
+        {
+            "fieldname": "checkpoint_name",
+            "fieldtype": "Data",
+            "label": "Checkpoint Name",
+            "reqd": 1
+        },
+        {
+            "fieldname": "location",
+            "fieldtype": "Data",
+            "label": "Location",
+            "reqd": 1
+        },
+        {
+            "fieldname": "checkpoint_status",
+            "fieldtype": "Select",
+            "label": "Status",
+            "options": "\nActive\nInactive",
+            "default": "Active"
+        },
+        {
+            "fieldname": "notes",
+            "fieldtype": "Text",
+            "label": "Notes"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "doctype": "DocType",
+    "name": "Patrol Vehicle",
+    "module": "PMSA",
+    "fields": [
+        {
+            "fieldname": "vehicle_number",
+            "fieldtype": "Data",
+            "label": "Vehicle Number",
+            "reqd": 1
+        },
+        {
+            "fieldname": "vehicle_model",
+            "fieldtype": "Data",
+            "label": "Vehicle Model",
+            "reqd": 1
+        },
+        {
+            "fieldname": "maintenance_schedule",
+            "fieldtype": "Table",
+            "label": "Maintenance Schedule",
+            "options": "Vehicle Maintenance"
+        }
+    ]
+}
