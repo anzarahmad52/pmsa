@@ -28,6 +28,13 @@
             "fieldtype": "Table",
             "label": "Incident Report",
             "options": "Incident Report"
+        },
+        {
+            "fieldname": "stock_entry",
+            "fieldtype": "Link",
+            "label": "Stock Entry",
+            "options": "Stock Entry",
+            "description": "Link to the stock entry associated with this patrol record"
         }
     ]
 }

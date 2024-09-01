@@ -1,0 +1,34 @@
+{
+    "doctype": "DocType",
+    "name": "Patrol Inventory",
+    "module": "PMSA",
+    "fields": [
+        {
+            "fieldname": "location",
+            "fieldtype": "Link",
+            "label": "Location",
+            "options": "Location",
+            "reqd": 1
+        },
+        {
+            "fieldname": "inventory_type",
+            "fieldtype": "Select",
+            "label": "Inventory Type",
+            "options": "\nTanker\nPump Storage",
+            "reqd": 1
+        },
+        {
+            "fieldname": "quantity",
+            "fieldtype": "Float",
+            "label": "Quantity (Liters)",
+            "reqd": 1
+        },
+        {
+            "fieldname": "last_updated",
+            "fieldtype": "Datetime",
+            "label": "Last Updated",
+            "reqd": 1,
+            "default": "Today"
+        }
+    ]
+}
