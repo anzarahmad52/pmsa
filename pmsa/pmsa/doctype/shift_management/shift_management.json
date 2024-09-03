@@ -1,0 +1,43 @@
+{
+    "doctype": "DocType",
+    "name": "Shift Management",
+    "module": "PMSA",
+    "fields": [
+        {
+            "fieldname": "shift_name",
+            "fieldtype": "Data",
+            "label": "Shift Name",
+            "reqd": 1
+        },
+        {
+            "fieldname": "start_time",
+            "fieldtype": "Time",
+            "label": "Start Time",
+            "reqd": 1
+        },
+        {
+            "fieldname": "end_time",
+            "fieldtype": "Time",
+            "label": "End Time",
+            "reqd": 1
+        },
+        {
+            "fieldname": "assigned_officers",
+            "fieldtype": "Table",
+            "label": "Assigned Officers",
+            "options": "Patrol Officer"
+        },
+        {
+            "fieldname": "assigned_vehicle",
+            "fieldtype": "Link",
+            "label": "Assigned Vehicle",
+            "options": "Patrol Vehicle"
+        },
+        {
+            "fieldname": "route",
+            "fieldtype": "Link",
+            "label": "Patrol Route",
+            "options": "Patrol Route"
+        }
+    ]
+}

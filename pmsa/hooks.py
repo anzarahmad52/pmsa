@@ -5,7 +5,15 @@ app_description = "PMSA"
 app_email = "a@gmail.com"
 app_license = "mit"
 # required_apps = []
+doc_events = {
+    "Expense Entry": {
+        "on_submit": "pmsa.pmsa.doctype.expense_entry.expense_entry.make_gl_entry"
+    }
+}
+from .pmsa.doctype.checkpoint.checkpoint import create_default_checkpoints
 
+def after_install():
+    create_default_checkpoints()
 # Includes in <head>
 # ------------------
 

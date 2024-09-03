@@ -1,19 +1,36 @@
 {
     "doctype": "DocType",
-    "name": "Patrol Route",
+    "name": "Patrol Record",
     "module": "PMSA",
+    "custom": 1,
     "fields": [
         {
-            "fieldname": "route_name",
-            "fieldtype": "Data",
-            "label": "Route Name",
+            "fieldname": "patrol_date",
+            "fieldtype": "Date",
+            "label": "Patrol Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "patrol_team",
+            "fieldtype": "Link",
+            "label": "Patrol Team",
+            "options": "Patrol Team",
             "reqd": 1
         },
         {
             "fieldname": "checkpoints",
             "fieldtype": "Table",
             "label": "Checkpoints",
-            "options": "Patrol Checkpoint"
+            "options": "Checkpoint"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
         }
     ]
 }

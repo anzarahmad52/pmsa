@@ -1,0 +1,39 @@
+{
+    "doctype": "DocType",
+    "name": "Patrol Log",
+    "module": "PMSA",
+    "fields": [
+        {
+            "fieldname": "patrol_record",
+            "fieldtype": "Link",
+            "label": "Patrol Record",
+            "options": "Patrol Record",
+            "reqd": 1
+        },
+        {
+            "fieldname": "checkpoint",
+            "fieldtype": "Link",
+            "label": "Checkpoint",
+            "options": "Patrol Checkpoint",
+            "reqd": 1
+        },
+        {
+            "fieldname": "visit_time",
+            "fieldtype": "Time",
+            "label": "Visit Time",
+            "reqd": 1
+        },
+        {
+            "fieldname": "status",
+            "fieldtype": "Select",
+            "label": "Checkpoint Status",
+            "options": "\nSecure\nIssue Detected",
+            "default": "Secure"
+        },
+        {
+            "fieldname": "notes",
+            "fieldtype": "Text",
+            "label": "Notes"
+        }
+    ]
+}
